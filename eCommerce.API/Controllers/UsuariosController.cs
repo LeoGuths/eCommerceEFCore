@@ -1,5 +1,5 @@
 using eCommerce.API.Repositories;
-using eCommerce.Models;
+using eCommerce.Models.FluentAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eCommerce.API.Controllers;

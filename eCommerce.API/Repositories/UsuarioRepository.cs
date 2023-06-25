@@ -1,4 +1,5 @@
 ﻿using eCommerce.API.Database;
+using eCommerce.Models.FluentAPI.Models;
 
 namespace eCommerce.API.Repositories;
 
