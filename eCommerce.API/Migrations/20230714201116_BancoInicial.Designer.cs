@@ -12,7 +12,7 @@ using eCommerce.API.Database;
 namespace eCommerce.API.Migrations
 {
     [DbContext(typeof(ECommerceContext))]
-    [Migration("20230609192603_BancoInicial")]
+    [Migration("20230714201116_BancoInicial")]
     partial class BancoInicial
     {
         /// <inheritdoc />
@@ -20,7 +20,7 @@ namespace eCommerce.API.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.5")
+                .HasAnnotation("ProductVersion", "7.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -80,6 +80,43 @@ namespace eCommerce.API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Departamentos");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Nome = "Mercado"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Nome = "Moda"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Nome = "Eletrodomésticos"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Nome = "Eletroportáteis"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Nome = "Móveis"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Nome = "Informática"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Nome = "Beleza"
+                        });
                 });
 
             modelBuilder.Entity("eCommerce.Models.EnderecoEntrega", b =>
@@ -154,6 +191,9 @@ namespace eCommerce.API.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NomeMae")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NomePai")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Rg")

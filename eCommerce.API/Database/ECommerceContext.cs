@@ -1,5 +1,4 @@
-﻿using eCommerce.Models.FluentAPI.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace eCommerce.API.Database;
 

@@ -1,5 +1,4 @@
-﻿using eCommerce.Models.FluentAPI.Models;
-
+﻿
 namespace eCommerce.API.Repositories;
 
 public interface IUsuarioRepository

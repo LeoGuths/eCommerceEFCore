@@ -1,5 +1,5 @@
 ﻿using eCommerce.API.Database;
-using eCommerce.Models.FluentAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace eCommerce.API.Repositories;
 
@@ -13,12 +13,19 @@ public sealed class UsuarioRepository : IUsuarioRepository
 
     public IList<Usuario> Get()
     {
-        return _db.Usuarios.ToList();
+        return _db.Usuarios
+            .Include(x => x.Contato)
+            .OrderBy(x => x.Id)
+            .ToList();
     }
 
     public Usuario Get(int id)
     {
-        return _db.Usuarios.Find(id)!;
+        return _db.Usuarios
+            .Include(x => x.Contato)
+            .Include(x => x.EnderecosEntrega)
+            .Include(x => x.Departamentos)
+            .FirstOrDefault(x => x. Id == id)!;
     }
 
     public void Add(Usuario usuario)
