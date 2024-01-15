@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.Models.FluentAPI"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.Office", "eCommerce.Office\eCommerce.Office.csproj", "{59E62DBA-0AEC-429E-90DE-B3B84363ACEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eCommerce.Console.Extra", "eCommerce.Console.Extra\eCommerce.Console.Extra.csproj", "{734E56F7-9520-471B-BD62-9AF92049007A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{59E62DBA-0AEC-429E-90DE-B3B84363ACEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59E62DBA-0AEC-429E-90DE-B3B84363ACEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59E62DBA-0AEC-429E-90DE-B3B84363ACEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{734E56F7-9520-471B-BD62-9AF92049007A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{734E56F7-9520-471B-BD62-9AF92049007A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{734E56F7-9520-471B-BD62-9AF92049007A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{734E56F7-9520-471B-BD62-9AF92049007A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
